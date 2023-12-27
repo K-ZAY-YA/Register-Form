@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap');
+:root{
+    --wcc:#f4f4f4;
+    --gyc:#777777e0;
+    --dbc:#007bff;
+    --occ:orange;
+    --gnc:green;
+}
+*{
+    font-family: 'Stick No Bills', sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 480px;
+    background-color: var(--wcc);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+.container h2{
+    text-align: center;
+}
+
+.container .form{
+    padding: 30px 40px;
+}
+
+.form-group{
+    margin-bottom: 30px;
+}
+.form-group label{
+    display: block;
+    color: var(--gyc);
+    margin-bottom: 5px;
+}
+.form-group .form-control{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+.form-group span{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -30px;
+    color: var(--gyc);
+}
+
+.form-group .form-control::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+form .btn{
+    width: 100%;
+    background-color: var(--dbc);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
+    border: 0; 
+}
+.footer{
+    padding: 25px;
+    text-align: center;
+}
+.footer span,a{
+    color: black;
+    transition: 0.5s;
+}
+.footer a:hover{
+    color: red;
+}
+form .btn:hover{
+    background-color: var(--occ);
+}
+.form .btn:active{
+    background-color: var(--gnc);
+}
+.form-group .form-control:focus{
+    outline: none;
+    border: 2px solid rgb(24, 213, 109);
+}
